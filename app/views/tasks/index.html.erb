@@ -2,10 +2,11 @@
 <ul><% @tasks.each do |task| %>
   <li>
     <% if task.completed == true %>
-    <i class="fa fa-check" aria-hidden="true"></i>
-    <% end %>
+      ☑️ <% end %>
     <%= link_to task.title, task_path(task) %>
+    <%= link_to "🗑", task_path(task), method: :delete, data: {confirm: task.title} %>
   </li>
 <% end %></ul>
 
-<%= link_to "Add a new task", "tasks/new" %>
+<p> <%= link_to "+ Add a new task", new_task_path %></p>
+
