@@ -1,3 +1,15 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+
+  &:visited {
+    color: rgb(58, 153, 217);
+  }
+}
+
+a {
+  color: rgb(58, 153, 217);
+}
